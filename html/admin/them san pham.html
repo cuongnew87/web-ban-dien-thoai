@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>FORM</title>
+    <style>
+        .ma {
+            margin: auto;
+        }
+
+        .text {
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="0" bgcolor="#00CCFF" class="ma">
+        <form>
+            <tr>
+                <td colspan="2" align="center" class="text">
+                    THÊM SẢN PHẨM MỚI
+                </td>
+            </tr>
+            <tr>
+                <td>Tên Sản Phẩm:</td>
+                <td><input type="text" name="Tên" value="" size="30px" maxlength="30" /></td>
+            </tr>
+            <tr>
+                <td>Giá Nhập Kho</td>
+                <td><input type="text" name="Mật Khẩu" value="" size="30px" maxlength="30" /></td>
+            </tr>
+            <tr>
+                <td>Giá Bán Lẻ</td>
+                <td><input type="text" name="Mật Khẩu" value="" size="30px" maxlength="30" /></td>
+            </tr>
+            <tr>
+                <td>Nhà Sản Xuất</td>
+                <td>
+                    <select name="list">
+                        <option value="0">------Chọn Nhà Sản Xuất-------</option>
+                        <option value="1">LG</option>
+                        <option value="2">Nokia</option>
+                        <option value="3">Xiaomi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Loại Sản Phẩm</td>
+                <td width="30px">
+                    <select name="list">
+                        <option value="0">------Chọn Thể Loại -------</option>
+                        <option value="1">LG</option>
+                        <option value="2">Nokia</option>
+                        <option value="3">Xiaom</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Mô Tả Tóm Tắt</td>
+                <td><textarea cols="30" rows="3" name=""> Nhập Nội Dung </textarea></td>
+            </tr>
+            <tr>
+                <td>Giới Tính:</td>
+                <td>
+                    Nam<input type="radio" name="tên" value="Nam" checked="checked" />
+                    Nữ<input type="radio" name="tên" value="Nữ" checked="checked" />
+                </td>
+            </tr>
+            <tr>
+                <td>Sở Thích:</td>
+                <td>
+                    Bóng Chuyền<input type="checkbox" name="tên" value="Nam" checked="checked" />
+                    Cầu Lông<input type="checkbox" name="tên" value="Nữ" checked="checked" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" value="Đăng Nhập">Thêm Mới</button>
+                    <button type="submit" value="Thoát">Reset</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

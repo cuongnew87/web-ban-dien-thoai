@@ -1,0 +1,692 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <script src="../javascript/jquery-3.4.1.js"></script>
+    <script src="../javascript/script.js"></script>
+</head>
+<body>
+    <header>
+        <ul class="top">
+            <li>
+                <img class="logo" src="../images/logo it my.png" />
+            </li>
+            <li>
+                <i class="fa fa-car"></i>
+                <div>
+                    <b>Miễn phí đơn vận chuyển</b>
+                    <br /> Đơn hàng từ 500k
+                </div>
+
+            </li>
+            <li>
+                <i class="fa fa-volume-control-phone"></i>
+                <div>
+                    <b>Hỗ trợ 24/7</b>
+                    <br />Hotline: 0388852043
+                </div>
+            </li>
+            <li>
+                <i class="fa fa-clock-o"></i>
+                <div>
+                    <b>Giờ làm việc</b>
+                    <br />8h00 - 17h00. Thứ 2 - Thứ 7
+                </div>
+            </li>
+            <li>
+                <div class="gio-hang">
+                    <i class="fa fa-cart-plus"></i>
+                    <a href="muahang.html">Giỏ hàng(<span id="cart-item">0</span>)</a>
+                </div>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </header>
+    <nav class="menu-main">
+        <ul class="menu">
+            <li class="trangchu"><a class="colorbaclk" href="#">TRANG CHỦ</a></li>
+            <li class="vechungtoi"><a class="" href="#">VỀ CHÚNG TÔI</a></li>
+            <li>
+                <a href="#">
+                    SẢN PHẨM
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <ul>
+                    <li><a href="laptop.html">Lap Top</a></li>
+                    <li><a href="dienthoai.html">Điện Thoại</a></li>
+                    <li><a href="phukien.html">Phụ Kiện</a></li>
+                    <li><a href="thoitrang.html">Thời Trang Nam Nữ</a></li>
+                </ul>
+            </li>
+            <li class="khuyenmai"><a class="" href="#">KHUYẾN MÃI</a></li>
+            <li class="dichvu"><a class="" href="#">HỖ TRỢ</a></li>
+            <li class="tintuc"><a class="" href="#">TIN TỨC</a></li>
+            <li class="lienhe"><a class="" href="#">LIÊN HỆ</a></li>
+            <li class="search">
+                <input id="search-input" type="text" name="name" placeholder="Nhập từ khóa tìm kiếm" oninput = "search()" /><i class="fa fa-search"></i>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+    <div id="main">
+        <!-- trang chủ -->
+        <main class="container ">
+            <div class="slide">
+                <img class="img-slide" src="../images/banneer copy.jpg" />
+            </div>
+            <section class="content">
+                <div class="content-left">
+                    <div>
+                        <h3><span>LAP TOP</span></h3>
+                        <div class="col">
+                            <div class="item" id="i1">
+                                <a href="#/" onclick="addToCart()">
+                                    <div>
+                                        <img class="img-item" src="../images/laptop/laptopAsus Zenbook 15 UX533FD-A9098T.jpg" />
+                                    </div>
+                                    <div class="information">
+                                        <h5 class="name-item" id="n1">Asus Zenbook 15 UX533FD-A9098T</h5>
+                                        <h5 class="price">Giá Bán: 22.000.000đ</h5>
+                                        <h5>Intel Core i7-8565U</h5>
+                                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item" id="i2">
+                                <a href="#/" onclick="addToCart()">
+                                    <div>
+                                        <img class="img-item" src="../images/laptop/MSI GF75 Thin 9SC-200FR.jpg" />
+                                    </div>
+                                    <div class="information">
+                                        <h5 class="name-item" id="n2">MSI GF75 Thin 9SC-200FR</h5>
+                                        <h5 class="price">Giá Bán: 19.500.000đ</h5>
+                                        <h5>Intel Core i7-8565U</h5>
+
+                                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item" id="i3">
+                                <a href="#/" onclick="addToCart()">
+                                    <div>
+                                        <img class="img-item" src="../images/laptop/Asus ROG STRIX G G531GV-AL027.jpg" />
+                                    </div>
+                                    <div class="information">
+                                        <h5 class="name-item" id="n3">Asus ROG STRIX G G531GV-AL027</h5>
+                                        <h5 class="price">Giá Bán: 23.500.000đ</h5>
+                                        <h5>Intel Core i7-8565U</h5>
+                                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3><span>ĐIỆN THOẠI</span> </h3>
+                        <div class="col">
+                            <div class="item" id="i4">
+                                <a href="#/" onclick="addToCart()">
+                                    <div>
+                                        <img class="img-item" src="../images/Dienthoai/Xiaomi Redmi Note 8 (4GB64GB).jpg" />
+                                    </div>
+                                    <div class="information">
+                                        <h5 class="name-item" id="n4">Xiaomi Redmi Note 8 (4GB/64GB)</h5>
+                                        <h5 class="price">Giá Bán: 3.389.000 đ</h5>
+                                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item" id="i5">
+                                <a href="#/" onclick="addToCart()">
+                                    <div>
+                                        <img class="img-item" src="../images/Dienthoai/Apple iPhone 6 64GB.jpg" />
+                                    </div>
+                                    <div class="information">
+                                        <h5 class="name-item" id="n5">Apple iPhone 6 64GB</h5>
+                                        <h5 class="price">Giá Bán: 2,890,000 đ</h5>
+                                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item" id="i6">
+                                <a href="#/" onclick="addToCart()">
+                                    <div>
+                                        <img class="img-item" src="../images/Dienthoai/Samsung Galaxy S9 Plus 64Gb.jpg" />
+                                    </div>
+                                    <div class="information">
+                                        <h5 class="name-item" id="n6">Samsung Galaxy S9 Plus 64GB</h5>
+                                        <h5 class="price">Giá Bán: 3,200,000 đ</h5>
+                                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3><span>PHỤ KIỆN</span> </h3>
+                        <div class="col">
+                            <div class="item" id="i7">
+                                <a href="#/" onclick="addToCart()">
+                                    <div>
+                                        <img class="img-item" src="../images/Phukien/BobanphimgiacoYOOGOO G92.jpg" />
+                                    </div>
+                                    <div class="information">
+                                        <h5 class="name-item" id="n7">Bộ Bàn phím giả cơ YOOGOO G92 và chuột T06</h5>
+                                        <h5 class="price">Giá Bán: 378.000 đ</h5>
+                                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item" id="i8">
+                                <a href="#/" onclick="addToCart()">
+                                    <div>
+                                        <img class="img-item" src="../images/Phukien/Oplung3D.jpg" />
+                                    </div>
+                                    <div class="information">
+                                        <h5 class="name-item" id="n8">Ốp lưng 3D</h5>
+                                        <h5 class="price">Giá Bán: 150.000đ</h5>
+                                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item" id="i9">
+                                <a href="#/" onclick="addToCart()">
+                                    <div>
+                                        <img class="img-item" src="../images/Phukien/TaingheSony IER-Z1R.jpg" />
+                                    </div>
+                                    <div class="information">
+                                        <h5 class="name-item" id="n9">Tai Nghe Sony IER-Z1R</h5>
+                                        <h5 class="price">Giá Bán: 300.000đ</h5>
+                                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3><span>THỜI TRANG NAM NỮ</span></h3>
+                        <div class="col">
+                            <div class="item" id="i10">
+                                <a href="#/" onclick="addToCart()">
+                                    <div>
+                                        <img class="img-item" src="../images/Thoitrang/AokhoacdenPK Gnar.jpg" />
+                                    </div>
+                                    <div class="information">
+                                        <h5 class="name-item" id="n10">Áo Khoát Đen PK Gnar</h5>
+                                        <h5 class="price">Giá Bán: 220.000đ</h5>
+                                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item" id="i11">
+                                <a href="#/" onclick="addToCart()">
+                                    <div>
+                                        <img class="img-item" src="../images/Thoitrang/AokhoacPK.jpg" />
+                                    </div>
+                                    <div class="information">
+                                        <h5 class="name-item" id="n11">Áo Khoát PK</h5>
+                                        <h5 class="price">Giá Bán: 200.000đ</h5>
+                                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item" id="i12">
+                                <a href="#/" onclick="addToCart()">
+                                    <div>
+                                        <img class="img-item" src="../images/Thoitrang/AolienminhPK.jpg" />
+                                    </div>
+                                    <div class="information">
+                                        <h5 class="name-item" id="n12">Áo Liên Minh PK</h5>
+                                        <h5 class="price">Giá Bán: 150.000đ</h5>
+                                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <div class="data-col">
+                        <h3>DANH MỤC SẢN PHẨM</h3>
+                        <div class="iron-bar">
+                            <i class="fa fa-minus"></i>
+                            <i class="fa fa-minus"></i>
+                            <i class="fa fa-snowflake-o"></i>
+                            <i class="fa fa-spinner fa-mid"></i>
+                            <i class="fa fa-snowflake-o"></i>
+                            <i class="fa fa-minus"></i>
+                            <i class="fa fa-minus"></i>
+                        </div>
+                        <div class="data-item">
+                            <ul>
+                                <li>
+                                    <a href="laptop.html"><i class="fa fa-cubes"></i> Lap Top</a>
+                                </li>
+                                <li>
+                                    <a href="dienthoai.html"><i class="fa fa-cubes"></i> Điện Thoại</a>
+                                </li>
+                                <li>
+                                    <a href="phukien.html"><i class="fa fa-cubes"></i> Phụ Kiện</a>
+                                </li>
+                                <li>
+                                    <a href="thoitrang.html"><i class="fa fa-cubes"></i> Thời Trang Nam Nữ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="data-col">
+                        <h3>HỖ TRỢ TRỰC TIẾN</h3>
+                        <div class="iron-bar">
+                            <i class="fa fa-minus"></i>
+                            <i class="fa fa-minus"></i>
+                            <i class="fa fa-snowflake-o"></i>
+                            <i class="fa fa-spinner fa-mid"></i>
+                            <i class="fa fa-snowflake-o"></i>
+                            <i class="fa fa-minus"></i>
+                            <i class="fa fa-minus"></i>
+                        </div>
+                        <div class="data-item2">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <img src="../images/hotrott.jpg" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="hotline"><i class="fa fa-phone "></i> Hotline: 0388852043</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="skype"><i class="fa fa-skype"></i> Skype: 0388852043</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gmail"><i class="fa fa-twitch icon-gmail"></i> Gmail:zkazjng@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="data-col">
+                        <h3>SẢN PHẨM NỔI BẬT</h3>
+                        <div class="iron-bar">
+                            <i class="fa fa-minus"></i>
+                            <i class="fa fa-minus"></i>
+                            <i class="fa fa-snowflake-o"></i>
+                            <i class="fa fa-spinner fa-mid"></i>
+                            <i class="fa fa-snowflake-o"></i>
+                            <i class="fa fa-minus"></i>
+                            <i class="fa fa-minus"></i>
+                        </div>
+                        <div class="data-item2">
+                            <ul>
+                                <li>
+                                    <a href="#/" onclick="addToCart()">
+                                        <div class="container-product">
+                                            <img class="product-hot" src="../images/san pham noi bat.jpg" />
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="center">
+                                    <a href="#" class="product-hot-name">Asus Zenbook UX362FA</a>
+                                </li>
+                                <li class="center">
+                                    <a href="#" class="product-hot-price">Giá: 16.900.000đ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="data-col">
+                        <h3>TIN TỨC NỔI BẬT</h3>
+                        <div class="iron-bar">
+                            <i class="fa fa-minus"></i>
+                            <i class="fa fa-minus"></i>
+                            <i class="fa fa-snowflake-o"></i>
+                            <i class="fa fa-spinner fa-mid"></i>
+                            <i class="fa fa-snowflake-o"></i>
+                            <i class="fa fa-minus"></i>
+                            <i class="fa fa-minus"></i>
+                        </div>
+                        <div class="data-item3">
+                            <ul>
+                                <li>
+                                    <img src="../images/Tintuc/sach.jpg" />
+                                    <span>Các loại sách hay hiện nay</span>
+                                    <div class="clear"></div>
+                                </li>
+                                <li>
+                                    <img src="../images/Tintuc/containere.jpg" />
+                                    <span>Sự kiện 39 thi thể  chết trong container lạnh ở Anh</span>
+                                    <div class="clear"></div>
+                                </li>
+                                <li>
+
+                                    <img src="../images/Tintuc/chua.jpg" />
+                                    <span>Hơn 50 người xông vào trùa bông lai ăn cấp tài sản</span>
+                                    <div class="clear"></div>
+                                </li>
+                                <li>
+                                    <img src="../images/Tintuc/quan su.jpg" />
+                                    <span>Thật hư việt sinh viên học đại học để chốn nghĩa vụ quân sự</span>
+                                    <div class="clear"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </section>
+        </main>
+        <!-- VỀ CHÚNG TÔI -->
+        <main class="veChungToi main2 hide">
+            <p>
+                - Nguyễn Đăng Sơn
+            </p>
+            <p>
+                - Lớp: D18C02A
+            </p> <p>
+                - Mã Số Sinh Viên: D18C02A
+            </p>
+            <p>
+                - Bài Thiết Kế Website bán hàng offline cuối kỳ
+            </p> <p>
+                - Trang Web bán về các mặt hàng :
+            </p> <p>
+                &nbsp; &nbsp; + Điện thoại
+            </p> <p>
+                &nbsp; &nbsp;  + Laptop
+            </p> <p>
+                &nbsp; &nbsp; + Phụ kiện
+            </p> <p>
+                &nbsp; &nbsp; + Thời trang
+            </p>
+
+        </main>
+        <!-- khuyến mãi -->
+        <main class="khuyenMai main main3 hide">
+            <div class="item">
+                <a href="#/" onclick="addToCart()">
+                    <div class="hop">
+                        <img class="img-item" src="../images/khuyenmai/laptopAsus Zenbook 15 UX533FD-A9098Tkhuyenmai.png" />
+                    </div>
+                    <div class="information">
+                        <div class="khuyenmai">
+                            <img class="icon-khuyenmai" src="../images/khuyenmai.png" />
+                            <div>
+                                <span>Tặng phiếu mua hàng 500.000đ</span>
+                                <span>Tặng Balo M2 đi phượt</span>
+                                <span>Tặng ngay chuột không dây K3 Asus</span>
+                            </div>
+                        </div>
+                        <h5 class="name-item">Asus Zenbook 15 UX533FD-A9098T</h5>
+                        <h5 class="price">Giá Bán: 22.000.000đ</h5>
+                        <h5>Intel Core i7-8565U</h5>
+                        <h5>Kiểu máy phong cách thời trang,cấu hình máy tối ưu cho những games hot hiên nay như: LOL,FIFA,CF...</h5>
+                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#/" onclick="addToCart()">
+                    <div class="information">
+                        <div class="khuyenmai">
+                            <img class="icon-khuyenmai" src="../images/khuyenmai.png" />
+                            <div>
+                                <span>Tặng phiếu mua hàng 200.000đ</span>
+                                <span>Tặng Balo M2 đi phượt</span>
+                                <span>Tặng Ốp Lưng 3D và Thẻ nhớ 8Gb</span>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <h5 class="name-item">Xiaomi Redmi Note 8 (4GB64GB)</h5>
+                            <h5 class="price">Giá Bán: 8.499.000đ</h5>
+                            <h5>Camera 6.0 chụp hình đêm rõ nét</h5>
+                            <h5>Kiểu máy phong cách thời trang</h5>
+                            <h5>Cấu hình máy tối ưu cho những games Mobile hiện hành</h5>
+                            <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                        </div>
+                    </div>
+                    <div class="hop">
+                        <img class="img-item" src="../images/khuyenmai/Xiaomi Redmi Note 8 (4GB64GB) khuyenmai.png" />
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#/" onclick="addToCart()">
+                    <div class="hop">
+                        <img class="img-item" src="../images/khuyenmai/Asus ROG STRIX G G531GV-AL027 khuyenmaicopy.png" />
+                    </div>
+                    <div class="information">
+                        <div class="khuyenmai">
+                            <img class="icon-khuyenmai" src="../images/khuyenmai.png" />
+                            <div>
+                                <span>Tặng phiếu mua hàng 500.000đ</span>
+                                <span>Tặng Balo M2 đi phượt</span>
+                                <span>Tặng ngay chuột không dây K3 Asus</span>
+                            </div>
+                        </div>
+                        <h5 class="name-item">Asus ROG STRIX G G531GV-AL027</h5>
+                        <h5 class="price">Giá Bán: 28.000.000đ</h5>
+                        <h5>Intel Core i7-8565U</h5>
+                        <h5>Kiểu máy phong cách thời trang</h5>
+                        <h5>Pin trâu,chơi mượt mà tất cả games sinh tồn,cấu hình khá cao thích hợp cho các game thủ thích đi đây đi đó</h5>
+                        <input class="buy" type="submit" name="mua-Hang" value="Mua ngay" />
+                    </div>
+                </a>
+            </div>
+        </main>
+        <!-- dịch vụ -->
+        <main class="dichVu main main4 hide">
+            <div class="item">
+                <span>CÁC BƯỚC MUA HÀNG ONLINE</span>
+                <a href="#">
+                    <div class="hop">
+                        <img class="img-dv-hdmh" src="../images/dichvu/mua-hang-tren-website-1024x372.jpg" />
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="hop">
+                        <img class="img-item" src="../images/dichvu/cau hoi thuong gap.jpg" />
+                    </div>
+                    <div class="information">
+                        <div class="khuyenmai">
+                            <div>
+                                <span>Tôi muốn mua hàng phải làm sao?</span>
+                                <span>Từ khi tôi mua hàng đến khi nhận hàng là  bao lâu?</span>
+                                <span>Tôi muốn được trực tiếp xem mẫu và thử đồ trước khi mua có được không?</span>
+                                <span>Tôi mua hàng rồi, không vừa ý có thể đổi/trả lại hay không?</span>
+                                <span>...</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="hop">
+                        <img class="img-dv-hdtt" src="../images/dichvu/huong dan thanh toan.png" />
+                    </div>
+                    <div class="information">
+
+                        <img class="img-dv-hdtt1" src="../images/dichvu/httt.jpg" />
+                    </div>
+                </a>
+            </div>
+
+        </main>
+        <!-- tin tức -->
+        <main class="tinTuc main main5 hide">
+            <div class="item">
+                <a href="#">
+                    <div class="hop">
+                        <img class="img-item-tt" src="../images/Tintuc/1.jpg" />
+                    </div>
+                    <div class="information">
+                        <h3>
+                            'Dâm ô bé gái ở Trung tâm hỗ trợ xã hội': Bắt khẩn cấp Nguyễn Tiến Dũng
+                        </h3>
+                        <p>
+                            Cơ quan CSĐT Công an Q.Bình Thạnh (TP.HCM) đã bắt khẩn cấp ông Nguyễn Tiến Dũng điều tra về hành vi dâm ô nhiều bé gái tại Trung tâm hỗ trợ xã hội (463 đường Nơ Trang Long, Q.Bình Thạnh).
+                            Chiều 17.11, nguồn tin PV Thanh Niên cho biết, cơ quan CSĐT Công an Q.Bình Thạnh (TP.HCM) đã thực hiện lệnh bắt người trong trường hợp khẩn cấp đối với ông Nguyễn Tiến Dũng (48 tuổi, ngụ Q.3) cán bộ tại Trung tâm hỗ trợ xã hội (thuộc Sở LĐTB&XH TP.HCM) để điều tra liên quan đến việc dâm ô nhiều bé gái ngay tại trung tâm này.
+                            Chiều cùng ngày, bà Nguyễn Thị Mỵ - Giám đốc Trung tâm công tác xã hội giáo dục dạy nghề thiếu niên TP (14 Nguyễn Văn Bảo, P.4, Q.Gò Vấp) xác nhận đơn vị này đã có công văn gửi Sở LĐTB&XH TP.HCM báo cáo về việc 6 trẻ em bị ông Dũng dâm ô trong thời gian được nuôi dưỡng tại Trung tâm hỗ trợ xã hội (463 Nơ Trang Long, P.13, Q.Bình Thạnh).
+                            Theo nội dung công văn này, ngày 30.10, qua công tác nuôi dạy các trẻ, Trung tâm công tác xã hội giáo dục dạy nghề thiếu niên TP can thiệp hỗ trợ tâm lý cho bé N.N.K.N (14 tuổi) vì bé có biểu hiện bất ổn về tâm sinh lý.
+                            Qua hỗ trợ, bé K.N cho biết bị cán bộ tại Trung tâm hỗ trợ xã hội dâm ô nhiều lần. Qua làm việc, Trung tâm công tác xã hội giáo dục dạy nghề thiếu niên TP đã ghi nhận có 6 bé độ tuổi 13, 14, 15 tuổi bị cán bộ tên Dũng dâm ô. 6 bé cho biết, ông Dũng thực hiện dâm ô qua cửa sổ buồng C2 của Trung tâm hỗ trợ xã hội. Các bé thay phiên nhau để ông Dũng dâm ô, trong đó bé K.N bị nhiều nhất.
+                            Các hành vi cụ thể của ông Dũng với các bé như: sờ và bóp ngực trẻ; yêu cầu trẻ cởi áo, quần; Yêu cầu trẻ sờ vào bộ phận sinh dục của ông. Sau mỗi lần dâm ô, ông Dũng cho trẻ hút thuốc lá, uống nước ngọt, cho nước sôi ăn mì tôm. Ông Dũng còn hứa với trẻ sẽ sửa hồ sơ cho trẻ hồi gia hoặc đi trường sớm.
+                            Như Báo Thanh Niên phản ánh, ông Nguyễn Tiến Dũng đã dâm ô nhiều lần với các bé gái ngay tại Trung tâm hỗ trợ xã hội. Ngay sau đó, Giám đốc Công an TP.HCM chỉ đạo xử ý nghiêm; ông Nguyễn Tiến Dũng bị tạm đình chỉ công tác 15 ngày để phục vụ công tác xác minh xử lý.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="hop">
+                        <img class="img-item-tt" src="../images/Tintuc/2.jpg" />
+                    </div>
+                    <div class="information">
+                        <h3>
+                            Việt Nam vào Top 6 đội hay nhất lượt đi World Cup 2022 khu vực châu Á
+                        </h3>
+                        <p>
+                            Chiến thắng 1-0 trước đội tuyển UAE đã giúp đội tuyển Việt Nam chính thức đi vào lịch sử khi lần đầu tiên giành được nhiều điểm như thế tại vòng loại World Cup (10 điểm), gần bằng tổng số điểm của 2 vòng loại World Cup trước đó (cũng thi đấu theo thể thức vòng bảng): 7 điểm ở vòng loại World Cup 2018 và 4 điểm ở vòng loại World Cup 2006.
+                            Với thành tích giành được 10 điểm sau 3 trận thắng, 1 trận hòa, ghi được 5 bàn thắng và để lọt lưới 1 bàn, đội tuyển Việt Nam đã vươn lên đứng đầu bảng G, bỏ xa đội xếp thứ 2 là Thái Lan 3 điểm và đội được đánh giá là mạnh nhất bảng UAE tới 4 điểm.
+                            Điều đáng nói hơn với 10 điểm, thầy trò HLV Park Hang-seo đã lọt vào Top 6 đội bóng có thành tích xuất sắc nhất ở lượt đi, chỉ sau đội đầu bảng A là Syria (12 điểm), đội đầu bảng B là Úc (12 điểm), đội đầu bảng F là Nhật Bản (12 điểm), ngang bằng với số điểm mà các đội đầu bảng C (Iraq), đội đầu bảng E (Qatar) giành được, hơn cả một số “ông lớn” của bóng đá châu lục như Hàn Quốc, Iran hay Ả Rập Xê Út.
+                            Đây là một thành tích tuyệt vời mà trước khi bước vào vòng loại thứ hai World Cup 2022, ngay cả những người hâm mộ bóng đá Việt Nam lạc quan nhất cũng không dám “mơ” tới, cho dù trước đó đội tuyển Việt Nam đã giành chức vô địch AFF Cup 2018 và lọt vào tới tứ kết của Asian Cup 2019.
+                            Đóng góp vào chiến tích này bên cạnh sự tỏa sáng của những cầu thủ tấn công như Quang Hải (ghi bàn duy nhất trong trận gặp Malaysia), Tiến Linh (ghi bàn duy nhất trong trận gặp UAE) còn phải kể đến sự chắc chắn của hàng phòng ngự đội tuyển Việt Nam.
+                            Dưới triều đại của mình, HLV Park Hang-seo đã và đang xây dựng nên một hàng phòng ngự có lối chơi kỷ luật và cực kỳ chắc chắn. Bằng chứng là sau 4 trận của lượt đi vòng loại thứ 2, hàng phòng ngự của đội tuyển Việt Nam mới chỉ để lọt lưới duy nhất 1 bàn, xếp thứ 3 trong số các hàng phòng ngự của các đội bóng châu Á, chỉ xếp sau có mỗi Nhật Bản (bảng F) và Hàn Quốc (bảng H) - những đội bóng chưa để lọt lưới bàn nào.
+                            Nếu tiếp tục giữ vững được phong độ ấn tượng như thế này thì mục tiêu lần đầu tiên trong lịch sử lọt vào vòng loại thứ 3 World Cup là hoàn toàn nằm trong tầm tay đối với thầy trò HLV Park Hang-seo.
+                            Giờ đây với “Những chiến binh Rồng Vàng” không có gì là không thể cả. Hãy cứ tin là như thế!
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="hop">
+                        <img class="img-item-tt" src="../images/Tintuc/3.jpg" />
+                        <img class="img-item-tt"  src="../images/Tintuc/4.jpg" />
+                    </div>
+                    <div class="information">
+                        <h3>
+                            Bà Lê Hoàng Diệp Thảo bất ngờ "kích nổ quả bom mới" trước phiên phúc thẩm ly hôn
+                        </h3>
+                        <p>
+                            Trong một diễn biến mới nhất liên quan đến vụ ly hôn của vợ chồngchủ Tập đoàn cà phê Trung Nguyên, mới đây bà Lê Hoàng Diệp Thảo (vợ của ông Đặng Lê Nguyên Vũ) đã gửi đơn tố giác đến Cơ quan điều tra – Viện Kiểm sát Nhân dân Tối cao tố cáo đích danh Thẩm phán Nguyễn Văn Xuân của Tòa án Nhân dân thành phố Hồ Chí Minh đã có hành vi làm sai lệch hồ sơ vụ án do cơ quan này thụ lý số 499/2015/TLST-HNGĐ ngày 17/11/2015.
+
+                            Phía bà Lê Hoàng Diệp Thảo cho hay, “một sai sót nghiêm trọng nữa trong quá trình tố tụng và xét xử sơ thẩm vụ án ly hôn giữa ông Đặng Lê Nguyên Vũ và bà Lê Hoàng Diệp Thảo vừa được phát hiện”.
+
+                            Trong đơn tố giác của mình về hành vi cố tình làm sai lệch của vụ án đối với Bản án ly hôn sơ thẩm, bà Thảo đã yêu cầu cơ quan chức năng xác minh, thậm chí phải khởi tố bị can để truy cứu trách nhiệm hình sự nhằm bảo vệ chuẩn mực trong hoạt động của Cơ quan tư pháp, bảo về quyền lợi hợp pháp của công dân.
+
+                            Cụ thể, ngày 24/6/2019, bà Lê Hoàng Diệp Thảo đã có đơn gửi đến Cơ quan Điều tra – Viện kiểm sát nhân dân Tối Cao để tố giác về hành vi cố tình làm sai lệch của vụ án đối với Bản án ly hôn sơ thẩm số 291/2019/HNGĐ-ST ngày 27/3/2019.
+
+                            Theo đơn này, ngày 23/8/2018 Chánh án Tòa án nhân dân cấp cao TP.HCM – ông Trần Văn Châu - đã ban hành quyết định số 05/2018/QĐ-GQKN-TACC (“Quyết định 05”) với nội dung: giữ nguyên quyết định chấp nhận khiếu nại của bà Lê Hoàng Diệp Thảo và đưa Công ty Trung Nguyên International (TNI) vào khối tài sản chung để phân chia trong vụ án ly hôn.
+
+                            Quyết định 05 ghi rõ nơi nhận là Viện kiểm sát nhân dân cấp cao tại TP.HCM, Tòa án nhân dân TP.HCM và các đương sự. Tuy nhiên, Quyết định này đã không được tống đạt cho bà Lê Hoàng Diệp Thảo (nguyên đơn) trong suốt thời gian trước, trong và sau khi diễn ra vụ xét xử sơ thẩm vụ ly hôn.
+
+                            Nghiêm trọng hơn, Thẩm phán Nguyễn Văn Xuân - Chủ tọa phiên tòa sơ thẩm cũng không đưa Quyết định 05 vào hồ sơ chứng cứ vụ án mà tự đưa ra nhận định: “Tách yêu cầu chia tài sản chung của vợ chồng Trung Nguyên tại công ty Trung Nguyên International Ptd Ltd (Singapore) ra khỏi vụ án ly hôn, thành một vụ án khác”.
+
+                            Phía bà Thảo cho rằng quyết định của Thẩm phán Xuân đã dẫn tới hậu quả “sai sót đặc biệt nghiêm trọng trong bản án sơ thẩm”.
+                            Ngày 20/6/2019 bà Thảo phát hiện ra Quyết định này. Chính vì thế, ngày 24/6/2019, bà Thảo đã làm đơn tố giác về hành vi “cố tình làm sai lệch” của vụ án đối với Bản án ly hôn sơ thẩm và yêu cầu cơ quan chức năng vào cuộc xác minh, khởi tố bị can để truy cứu trách nhiệm hình sự nhằm bảo vệ chuẩn mực trong hoạt động của Cơ quan tư pháp, bảo về quyền lợi hợp pháp của công dân.
+                            Một phần nội dung Đơn tố giác của bà Diệp Thảo.
+
+                            Trước đó, Viện Kiểm sát Nhân dân TP. HCM cũng đã có quyết định kháng nghị đối với bản án sơ thẩm do TAND TP.HCM tuyên ngày 27/03/2019, đồng thời đề nghị TAND Cấp cao tại TP.HCM xét xử phúc thẩm theo hướng hủy bản án sơ thẩm.
+
+                            Sau hai lần bị trì hoãn, dự kiến phiên tòa phúc thẩm vụ ly hôn giữa ông Đặng Lê Nguyên Vũ và bà Lê Hoàng Diệp Thảo sẽ diễn ra trong 3 ngày 18, 19 và 20 tháng 11.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </main>
+        <!-- liên hệ -->
+        <main class="lienHe main main6 hide">
+            <div class="item">
+                <a href="#">
+                    <div class="hop">
+                        <img class="img-item-tt" src="../images/hotrott.jpg" />
+                    </div>
+                    <div class="information">
+                        <h3>
+                            <i class="fa fa-phone "></i> Hotline: 0388852043
+                        </h3>
+                        <h3><i class="fa fa-skype"></i>Skype: 0388852043</h3>
+                        <h3><i class="fa fa-twitch icon-gmail"></i>Gmail:zkazjng@gmail.com</h3>
+                    </div>
+                </a>
+            </div>
+            
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-login">
+            <h3>TUYỂN NGƯỜI YÊU CHO ADMIN,VẢ LẮM RỒI</h3>
+            <input class="footer-phone" type="text" name="name" placeholder="Số điện thoại" />
+            <input class="footer-gmail" type="text" name="name" placeholder="Email" />
+            <input class="footer-registration" type="submit" name="name" value="ĐĂNG KÝ" />
+        </div>
+        <div class="footer-menu">
+            <a href="laptop.html">Lap Top</a>
+            <a href="dienthoai.html">Điện Thoại</a>
+            <a href="phukien.html">Phụ Kiện</a>
+            <a href="thoitrang.html">Thời Trang Nam Nữ</a>
+        </div>
+        <ul class="footer-address">
+            <li>
+                <h4>THÔNG TIN LIÊN HỆ</h4>
+                <ul>
+                    <li> <a href="#">Số điện thoại: 0388852043</a> </li>
+                    <li>
+                        <a class="p5" href="#">Hotline: 0123456789</a>
+                    </li>
+                    <li>
+                        <a class="p5" href="#">Website: Sẽ có trong tương lai</a>
+                    </li>
+                </ul>
+
+
+            </li>
+            <li>
+                <h4>QUY ĐỊNH - CHÍNH SÁCH</h4>
+                <ul>
+                    <li>
+                        <a href="#">Chính sách bảo mật</a>
+                    </li>
+                    <li>
+                        <a href="#">Chính sách sửa chửa</a>
+                    </li>
+                    <li>
+                        <a href="#"> Chính sách ưu đãi</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                <ul>
+                    <li>
+                        <a class="p5" href="#">Câu hỏi thường gặp</a>
+                    </li>
+                    <li>
+                        <a class="p5" href="#"> Hướng dẫn thanh toán</a>
+                    </li>
+                    <li>
+                        <a class="p5" href="#">Hướng dẫn mua hàng online</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>LIÊN KẾT FACEBOOK</h4>
+                <img class="img-footer-facebook" src="../images/lkfacebook.jpg" />
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <div class="footer-copy">
+            <p>Copyright &copy; Website Mẫu 01-Design Đồng Đoàn:Jocker Black</p>
+        </div>
+    </footer>
+</body>
+</html>
